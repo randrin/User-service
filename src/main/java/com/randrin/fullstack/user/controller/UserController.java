@@ -1,8 +1,8 @@
-package com.randrin.fullstack.userservice.controller;
+package com.randrin.fullstack.user.controller;
 
-import com.randrin.fullstack.userservice.entity.User;
-import com.randrin.fullstack.userservice.request.ResponseTemplate;
-import com.randrin.fullstack.userservice.service.UserService;
+import com.randrin.fullstack.user.entity.User;
+import com.randrin.fullstack.user.request.ResponseTemplate;
+import com.randrin.fullstack.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

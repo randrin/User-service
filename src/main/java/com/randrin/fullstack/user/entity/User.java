@@ -1,4 +1,4 @@
-package com.randrin.fullstack.userservice.entity;
+package com.randrin.fullstack.user.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

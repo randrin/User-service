@@ -1,4 +1,4 @@
-package com.randrin.fullstack.userservice.request;
+package com.randrin.fullstack.user.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

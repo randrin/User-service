@@ -1,9 +1,9 @@
-package com.randrin.fullstack.userservice.service;
+package com.randrin.fullstack.user.service;
 
-import com.randrin.fullstack.userservice.entity.User;
-import com.randrin.fullstack.userservice.repository.UserRepository;
-import com.randrin.fullstack.userservice.request.Department;
-import com.randrin.fullstack.userservice.request.ResponseTemplate;
+import com.randrin.fullstack.user.entity.User;
+import com.randrin.fullstack.user.repository.UserRepository;
+import com.randrin.fullstack.user.request.Department;
+import com.randrin.fullstack.user.request.ResponseTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,7 +28,7 @@ public class UserService {
 
         ResponseTemplate responseTemplate = new ResponseTemplate();
         User user = userRepository.findByUserId(userId);
-        Department department = restTemplate.getForObject("http://localhost:9001/departments/" + user.getDepartmentId(), Department.class);
+        Department department = restTemplate.getForObject("http://DEPARTMENT-SERVICE/departments/" + user.getDepartmentId(), Department.class);
         responseTemplate.setDepartment(department);
         responseTemplate.setUser(user);
 
